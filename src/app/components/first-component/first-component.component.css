@@ -1,9 +1,16 @@
+.title {
+    background-color: #000;
+    color: aqua;
+    padding: 15px;
+    
+}
+
 h2 {
     color: red;
-    text-align: end;
+    text-align: center;
 }
 
 p {
-    color:blue;
+    color: blue;
     text-align: center;
 }

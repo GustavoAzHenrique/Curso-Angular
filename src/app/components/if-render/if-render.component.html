@@ -1,0 +1,17 @@
+<div class="class">
+  <!-- Componente só com uma condição If definida no .ts -->
+  <div *ngIf="canShow">Estamos mostrando isso porque foi permitido</div><br />
+  <!-- Componente com uma condição If-Else, onde a condição If esta correspondente
+    a lógica da classe name no .ts e o Else esta definido no ng-template apontado para
+    o nome definido em else com #-->
+  <h2 *ngIf="name === 'Gustavo'; else nameNotFound">O nome digitado é: Gustavo</h2>
+
+  <ng-template #nameNotFound>
+    <div>
+      <h2>
+        O nome não foi encontrado!<br />
+        Você digitou corretamente?
+      </h2>
+    </div>
+  </ng-template>
+</div>
