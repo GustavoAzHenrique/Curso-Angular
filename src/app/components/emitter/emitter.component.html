@@ -1,0 +1,6 @@
+<!-- Evento/Componente Pai, rececbendo do componente Filho -->
+<div class="class">
+    <h1>O número sorteado é: {{myNumber}}</h1>
+    <!-- Chamada/Pegada do evento gerado no filho + gerando uma nova classe no Pai. -->
+    <app-change-number (changeNumber)="onChangeNumber()"></app-change-number>
+</div>
